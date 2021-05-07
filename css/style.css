@@ -1,0 +1,104 @@
+@font-face {
+  font-family: barlow-regular;
+  src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: barlow-semibold;
+  src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
+body {
+  font-family: barlow-regular;
+  background: hsl(0, 0%, 81%);
+}
+.container {
+  display: grid;
+  margin: 6% 6% 0 6%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "cont1 cont1 cont2 cont5"
+  "cont3 cont4 cont4 cont5"
+}
+.cards {
+  border-radius: 10px;
+  margin: .7rem;
+}
+.foto-div {
+  display: flex;
+  align-items: center;
+}
+.foto {
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+.foto-border {
+  border: 3px solid rgb(176, 93, 214);
+}
+.graduate {
+  color: hsl(0, 0%, 81%) !important;
+}
+.depoiments-title {
+  margin: 0 2rem 0rem 2rem;
+  font-size: 1.3rem; 
+}
+.depoiments {
+  margin: 1.5rem 2rem 2rem 2rem;
+  font-family: barlow-semibold;
+}
+.depoiment-white {
+  color: white;
+}
+.depoiment-gray {
+  color: hsl(217, 19%, 35%);
+}
+.name {
+  margin-bottom: .3rem;
+}
+.name-white {
+  color: hsl(210, 46%, 95%);
+}
+.name-gray {
+  color: hsl(217, 19%, 35%);
+}
+/* BOXES
+=========================== */
+.container1 {
+  background: hsl(263, 55%, 52%);
+  grid-area: cont1;
+}
+.container2 {
+  background: hsl(217, 19%, 35%); 
+  grid-area: cont2;
+}
+.container3 {
+  background: white;
+  grid-area: cont3;
+}
+.container4 {
+  background: hsl(219, 29%, 14%);
+  grid-area: cont4;
+}
+.container5 {
+  background: white;
+  grid-area: cont5;
+}
+.depoiments {
+  color: hsl(0, 0%, 81%);
+}
+.graduate {
+  color: hsl(210, 46%, 95%);
+}
+
+/* MEDIA 375PX
+====================== */
+@media (max-width: 375px) {
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "cont1"
+  "cont2"
+  "cont3"
+  "cont4"
+  "cont5"
+}  
+}
